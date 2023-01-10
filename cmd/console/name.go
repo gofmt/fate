@@ -24,12 +24,15 @@ func cmdName() *cobra.Command {
 		Use:   "name",
 		Short: "output the name",
 		Run: func(cmd *cobra.Command, args []string) {
+<<<<<<< HEAD
 			// _, e := os.Stat(filepath.Join(getCurrentPath(), "zoneinfo.zip"))
 			// if e != nil {
 			// 	log.Fatalw("zoneinfo file is not exist", "error", e)
 			// 	return
 			// }
 			// os.Setenv("ZONEINFO", filepath.Join(getCurrentPath(), "zoneinfo.zip"))
+=======
+>>>>>>> d4258116a5d9f2711bab27b8e957938f29407636
 			fmt.Println("start", time.Now().String())
 			config.DefaultJSONPath = path
 			cfg := config.LoadConfig()
